@@ -7,8 +7,13 @@
 }
 
 :root {
+    /* Variavel de cores */
     --cor-esc: #462A59;
     --cor-cla: #834EA6;
+
+    /* Variavel de fontes */
+    --fonte-titulo: 'Roboto', sans-serif; 
+    --fonte-paragraf: 'Montserrat', sans-serif;
 }
 
 body {
@@ -44,9 +49,10 @@ main h1 {
     padding: 10px;
     margin-bottom: 25px;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-titulo);
     font-size: 1.5em;
     text-align: center;
+    font-weight: 100;
 }
 
 main .container-links {
@@ -65,10 +71,11 @@ main .container-links {
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--fonte-titulo);
 
     border: 1px solid white;
     border-radius: 50px;
+    box-shadow: 0px 0px 15px #392049a9;
 }
 
 main a:hover {
@@ -78,18 +85,28 @@ main a:hover {
 }
 
 footer > p {
-    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin: auto;
+
+    font-family: var(--fonte-paragraf);
     color: white;
-    text-align: center;
-    margin-top: 35px;
 }
 
 footer a {
-    color: white;
+    display: flex;
+    margin: auto;
+    margin-top: 35px;
+
     text-decoration: none;
+    color: white;
 }
 
-footer a:hover {
+footer img {
+    width: 25px;
+    margin-top: -3px;
+}
+
+footer p:hover {
     text-decoration: underline;
     opacity: 0.6;
 }
@@ -110,12 +127,16 @@ main .container-pessoal {
 main .quem-sou {
     width: 45px;
     font-size: 2em;
+
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.541);
 }
 
 .container-foto2 img {
     width: 170px;
     margin-top: 25px;
+
     border-radius: 50%;
+    box-shadow: 0px 0px 115px rgba(0, 0, 0, 0.616);
 }
 
 main .container-parag {
@@ -137,11 +158,11 @@ main .container-parag {
 .container-parag .circle {
     width: 15px;
     height: 15px;
+
     margin: 5px;
     margin-top: 15px;
 
     border-radius: 50%;
-
 }
 
 .container-rodape .cred {
@@ -162,8 +183,8 @@ main .container-parag {
 }
 
 main .botao-voltar {
-    width: 40px;
     display: block;
+    width: 30px;
     margin: auto;
     margin-top: 6%;
 }
