@@ -17,12 +17,18 @@
 }
 
 body {
+    position: relative;
     background-image: linear-gradient(to bottom, var(--cor-cla), var(--cor-esc));
-    height: 88.6vh;
+    height: 100vh;
 }
 
 main {
-    margin-top: 75px;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate( -50%, -50%);
 }
 
 main .foto {
@@ -41,7 +47,7 @@ main .foto {
     height: 170px;
 
     border-radius: 50%;
-    box-shadow: 0px 0px 115px rgba(0, 0, 0, 0.575);
+    box-shadow: 0px 0px 115px #280341c5;
 }
 
 main h1 {
@@ -53,6 +59,7 @@ main h1 {
     font-size: 1.5em;
     text-align: center;
     font-weight: 100;
+    text-shadow: 0px 0px 15px #1f033167;
 }
 
 main .container-links {
@@ -84,7 +91,9 @@ main a:hover {
     transition-duration: 0.6s;
 }
 
-footer > p {
+/* Area do link Quem sou eu */
+
+main > p {
     display: flex;
     margin: auto;
 
@@ -92,35 +101,35 @@ footer > p {
     color: white;
 }
 
-footer a {
+#quem-sou a {
     display: flex;
     margin: auto;
-    margin-top: 35px;
+    margin-top: 30px;
 
     text-decoration: none;
     color: white;
 }
 
-footer img {
+main #botao-avancar {
     width: 25px;
     margin-top: -3px;
 }
 
-footer p:hover {
+#quem-sou a:hover {
     text-decoration: underline;
     opacity: 0.6;
-    
+    background-color: transparent;
 }
 
 
 /* Codigos referente a segunda pagina */ 
+
 
 main .container-pessoal {
     display: flex;
     width: 320px;
     padding: 10px;
     margin: auto;
-    margin-top: 120px;
 
     justify-content: space-between;
 }
@@ -141,7 +150,6 @@ main .quem-sou {
 }
 
 main .container-parag {
-    width: 60%;
     margin: auto;
     margin-top: 30px;
 
